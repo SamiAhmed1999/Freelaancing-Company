@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.image.Image?>
@@ -12,12 +13,12 @@
 
 <AnchorPane id="AnchorPane" prefHeight="586.0" prefWidth="819.0" style="-fx-background-color: #ADD8E6; bo: ;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ClientDashboardController">
    <children>
-      <Text layoutX="139.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service Delivery Time" />
-      <Text layoutX="138.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project Catergory" />
-      <ComboBox fx:id="projectcatergoryComboBox" layoutX="322.0" layoutY="315.0" prefHeight="31.0" prefWidth="270.0" promptText="Catergory" />
-      <Label layoutX="139.0" layoutY="376.0" text="Currency of payment" />
-      <RadioButton fx:id="dollarRadioButton" layoutX="321.0" layoutY="376.0" mnemonicParsing="false" text="Dollar " />
-      <RadioButton fx:id="EuroRadioButton" layoutX="527.0" layoutY="376.0" mnemonicParsing="false" text="Euro " />
+      <Text layoutX="139.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service Delivery Time" />
+      <Text layoutX="138.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project Catergory" />
+      <ComboBox fx:id="projectcatergoryComboBox" layoutX="322.0" layoutY="354.0" prefHeight="31.0" prefWidth="270.0" promptText="Catergory" />
+      <Label layoutX="139.0" layoutY="415.0" text="Currency of payment" />
+      <RadioButton fx:id="dollarRadioButton" layoutX="321.0" layoutY="415.0" mnemonicParsing="false" text="Dollar " />
+      <RadioButton fx:id="EuroRadioButton" layoutX="527.0" layoutY="415.0" mnemonicParsing="false" text="Euro " />
       <Label alignment="TOP_CENTER" layoutX="314.0" layoutY="120.0" text="Posting the Contract ">
          <font>
             <Font name="System Bold Italic" size="24.0" />
@@ -29,8 +30,10 @@
             <Image url="@../../../../../../Downloads/d0cf17e4d233e1f56b8809372b0fea02.jpeg" />
          </image>
       </ImageView>
-      <RadioButton fx:id="firsttimeRadioButton" layoutX="321.0" layoutY="271.0" mnemonicParsing="false" text="24 Hours" />
-      <RadioButton fx:id="secondtimeRadioButton" layoutX="430.0" layoutY="270.0" mnemonicParsing="false" text="3 Days" />
-      <RadioButton fx:id="thirdTimeRadioButton" layoutX="522.0" layoutY="270.0" mnemonicParsing="false" text="7 Days" />
+      <RadioButton fx:id="firsttimeRadioButton" layoutX="321.0" layoutY="304.0" mnemonicParsing="false" text="24 Hours" />
+      <RadioButton fx:id="secondtimeRadioButton" layoutX="430.0" layoutY="303.0" mnemonicParsing="false" text="3 Days" />
+      <RadioButton fx:id="thirdTimeRadioButton" layoutX="522.0" layoutY="303.0" mnemonicParsing="false" text="7 Days" />
+      <DatePicker fx:id="contractPostingDateDatepicker" layoutX="322.0" layoutY="253.0" prefHeight="31.0" prefWidth="270.0" promptText="Select Contract Posting Date" />
+      <Text layoutX="138.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Date" />
    </children>
 </AnchorPane>
